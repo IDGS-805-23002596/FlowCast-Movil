@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.flowcast.FlowCastApp
 import com.example.flowcast.ui.screens.SplashScreen
+import com.example.flowcast.ui.screens.login.LoginScreen
 
 @Composable
 fun AppNavigation(){
@@ -17,9 +18,19 @@ fun AppNavigation(){
         composable("splash") {
             SplashScreen(
                 onNavigateToNext = {
-                    navController.navigate("main") {
+                    navController.navigate("login") {
                         popUpTo("splash") { inclusive = true }
                     }
+                }
+            )
+        }
+
+        composable("login"){
+            LoginScreen(
+                onLoginSuccess = {
+                        navController.navigate("main") {
+                            popUpTo("login") { inclusive = true }
+                        }
                 }
             )
         }

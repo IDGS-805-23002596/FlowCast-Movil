@@ -13,16 +13,13 @@ import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import com.example.flowcast.ui.theme.darkBackground
 import com.example.flowcast.ui.theme.secundaryColor
 import kotlinx.coroutines.delay
 
@@ -38,7 +35,7 @@ fun SplashScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White),
+            .background(darkBackground),
         contentAlignment = Alignment.Center
     ) {
         Column(
@@ -47,7 +44,7 @@ fun SplashScreen(
             modifier = Modifier.padding(24.dp)
         ) {
             Image(
-                painter = painterResource(id = R.drawable.img_logo_estandar),
+                painter = painterResource(id = R.drawable.img_logo_positivo),
                 contentDescription = "Logo de la App",
                 modifier = Modifier
                     .size(180.dp)
