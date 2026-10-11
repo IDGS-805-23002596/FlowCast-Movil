@@ -6,3 +6,8 @@ val primaryColor = Color(0xFFD75915)
 val secundaryColor = Color(0xFFE89619)
 val lightColor = Color(0xFFF0CC7F)
 val darkColor = Color(0xFF161F28)
+
+val darkBackground = Color(0xFF0F0E0D)
+val darkGrayColor = Color(0xFF4a413d)
+
+val degradedColor = Color(0xFF522108)
